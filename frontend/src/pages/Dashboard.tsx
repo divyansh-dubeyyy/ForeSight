@@ -68,7 +68,7 @@ export function Dashboard() {
   };
 
   return (
-    <div className="h-full flex flex-col gap-6" onMouseMove={(e) => {
+    <div className="min-h-full flex flex-col gap-6" onMouseMove={(e) => {
         if (tooltip.show) setTooltip(prev => ({ ...prev, x: e.clientX, y: e.clientY }));
       }}>
       {/* Top Main Grid */}
@@ -265,7 +265,7 @@ export function Dashboard() {
                <h3 className="font-semibold text-lg">Forecast Revision History</h3>
                <p className="text-xs text-text-muted mb-4">How the forecast changed across successive runs</p>
              </div>
-             <div className="flex-1 w-full relative">
+             <div className="flex-1 w-full relative min-h-[200px]">
                 <div className="absolute inset-0">
                   <ResponsiveContainer width="100%" height="100%">
                     <LineChart data={mockEvolutionData} margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
