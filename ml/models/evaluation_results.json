@@ -1,0 +1,50 @@
+{
+    "Baseline (NWP+Region+Lead)": {
+        "Bust Classifier": {
+            "roc_auc": 0.8805736760153134,
+            "pr_auc": 0.3987985825715726,
+            "precision": 0.4319419237749546,
+            "recall": 0.1839258114374034,
+            "f1": 0.25799457994579944
+        },
+        "Error Magnitude": {
+            "mae": 4.024817395620804,
+            "rmse": 7.270122933943005
+        },
+        "Direction Classifier": {
+            "macro_f1": 0.5807927040880554
+        }
+    },
+    "Baseline (+Evolution)": {
+        "Bust Classifier": {
+            "roc_auc": 0.94650798174265,
+            "pr_auc": 0.6971702507138362,
+            "precision": 0.6868395773294909,
+            "recall": 0.5525502318392581,
+            "f1": 0.6124197002141327
+        },
+        "Error Magnitude": {
+            "mae": 3.1208272644149817,
+            "rmse": 5.542985685610554
+        },
+        "Direction Classifier": {
+            "macro_f1": 0.7205529701238333
+        }
+    },
+    "Final (All Features)": {
+        "Bust Classifier": {
+            "roc_auc": 0.9498401740027517,
+            "pr_auc": 0.7112214408118085,
+            "precision": 0.7176113360323887,
+            "recall": 0.5479134466769706,
+            "f1": 0.621384750219106
+        },
+        "Error Magnitude": {
+            "mae": 3.1113201225581215,
+            "rmse": 5.5718823914584465
+        },
+        "Direction Classifier": {
+            "macro_f1": 0.7185930022739816
+        }
+    }
+}
