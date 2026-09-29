@@ -9,16 +9,15 @@ import {
   History, 
   TrendingUp, 
   Database, 
-  Settings,
   Calendar,
   MapPin,
   Layers,
   RefreshCw,
-  ChevronDown,
   User
 } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import { useAppState } from '@/contexts/AppStateContext';
+import { cn } from '../../lib/utils';
+import { useAppState } from '../../contexts/AppStateContext';
+import { Dropdown } from '../ui/Dropdown';
 
 const navItems = [
   { name: 'Dashboard', icon: Home, path: '/' },
@@ -28,7 +27,6 @@ const navItems = [
   { name: 'Historical Replay', icon: History, path: '/replay' },
   { name: 'Model Performance', icon: TrendingUp, path: '/performance' },
   { name: 'Data Sources', icon: Database, path: '/data' },
-  { name: 'Settings', icon: Settings, path: '/settings' },
 ];
 
 export function AppLayout() {
@@ -76,51 +74,38 @@ export function AppLayout() {
       {/* Main Content */}
       <div className="flex-1 flex flex-col h-full overflow-hidden z-10">
         {/* Top Bar */}
-        <header className="h-20 p-6 flex items-center justify-between glass-card border-r-0 border-t-0 rounded-none shrink-0">
-          <div className="flex items-center gap-6">
-            <div className="glass-card flex items-center gap-3 px-4 py-2 rounded-lg cursor-pointer hover:bg-panel/50 transition-colors group relative">
-              <Calendar className="w-4 h-4 text-text-muted" />
-              <div className="flex flex-col pr-4">
-                <span className="text-[10px] text-text-muted uppercase">Forecast Initialization</span>
-                <span className="text-sm font-medium">01 Aug 2026, 00 UTC</span>
-              </div>
-              <ChevronDown className="w-4 h-4 text-text-muted absolute right-3 opacity-50 group-hover:opacity-100 transition-opacity" />
-            </div>
+        <header className="h-20 p-6 flex items-center justify-between glass-card border-r-0 border-t-0 rounded-none shrink-0 relative z-50">
+          <div className="flex items-center gap-4 relative">
             
-            <div className="glass-card flex items-center gap-3 px-4 py-2 rounded-lg relative group">
-              <MapPin className="w-4 h-4 text-text-muted" />
-              <div className="flex flex-col pr-4">
-                <span className="text-[10px] text-text-muted uppercase">Region</span>
-                <select 
-                  className="bg-transparent text-sm font-medium outline-none cursor-pointer appearance-none z-10"
-                  value={region}
-                  onChange={(e) => setRegion(e.target.value)}
-                >
-                  <option className="bg-background" value="India">India</option>
-                  <option className="bg-background" value="Madhya Pradesh">Madhya Pradesh</option>
-                  <option className="bg-background" value="Maharashtra">Maharashtra</option>
-                  <option className="bg-background" value="Kerala">Kerala</option>
-                </select>
-              </div>
-              <ChevronDown className="w-4 h-4 text-text-muted absolute right-3 pointer-events-none opacity-50 group-hover:opacity-100 transition-opacity" />
-            </div>
+            <Dropdown 
+              label="Forecast Initialization"
+              icon={<Calendar className="w-4 h-4" />}
+              value="01 Aug 2026, 00 UTC"
+              options={[{ label: "01 Aug 2026, 00 UTC", value: "01 Aug 2026, 00 UTC" }]}
+              onChange={() => {}}
+            />
             
-            <div className="glass-card flex items-center gap-3 px-4 py-2 rounded-lg relative group">
-              <Layers className="w-4 h-4 text-text-muted" />
-              <div className="flex flex-col pr-4">
-                <span className="text-[10px] text-text-muted uppercase">Lead Day</span>
-                <select 
-                  className="bg-transparent text-sm font-medium outline-none cursor-pointer appearance-none z-10"
-                  value={leadDay}
-                  onChange={(e) => setLeadDay(Number(e.target.value))}
-                >
-                  {[1,2,3,4,5,6,7,8,9,10].map(d => (
-                     <option key={d} className="bg-background" value={d}>Day {d}</option>
-                  ))}
-                </select>
-              </div>
-              <ChevronDown className="w-4 h-4 text-text-muted absolute right-3 pointer-events-none opacity-50 group-hover:opacity-100 transition-opacity" />
-            </div>
+            <Dropdown 
+              label="Region"
+              icon={<MapPin className="w-4 h-4" />}
+              value={region}
+              options={[
+                { label: "India", value: "India" },
+                { label: "Madhya Pradesh", value: "Madhya Pradesh" },
+                { label: "Maharashtra", value: "Maharashtra" },
+                { label: "Kerala", value: "Kerala" }
+              ]}
+              onChange={setRegion}
+            />
+            
+            <Dropdown 
+              label="Lead Day"
+              icon={<Layers className="w-4 h-4" />}
+              value={String(leadDay)}
+              options={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(d => ({ label: `Day ${d}`, value: String(d) }))}
+              onChange={(val) => setLeadDay(Number(val))}
+            />
+            
           </div>
           
           <div className="flex items-center gap-4">

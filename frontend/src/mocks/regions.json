@@ -2,46 +2,256 @@
   {
     "region": "Madhya Pradesh",
     "days": [
-      { "day": 1, "bust_probability": 0.1 },
-      { "day": 2, "bust_probability": 0.12 },
-      { "day": 3, "bust_probability": 0.15 },
-      { "day": 4, "bust_probability": 0.25 },
-      { "day": 5, "bust_probability": 0.78 },
-      { "day": 6, "bust_probability": 0.85 },
-      { "day": 7, "bust_probability": 0.65 },
-      { "day": 8, "bust_probability": 0.35 },
-      { "day": 9, "bust_probability": 0.18 },
-      { "day": 10, "bust_probability": 0.1 }
+      {
+        "day": 1,
+        "bust_probability": 0.1,
+        "forecast_rainfall_mm": 22,
+        "expected_error": 10,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      },
+      {
+        "day": 2,
+        "bust_probability": 0.12,
+        "forecast_rainfall_mm": 26,
+        "expected_error": 11,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      },
+      {
+        "day": 3,
+        "bust_probability": 0.15,
+        "forecast_rainfall_mm": 31,
+        "expected_error": 12,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      },
+      {
+        "day": 4,
+        "bust_probability": 0.25,
+        "forecast_rainfall_mm": 43,
+        "expected_error": 17,
+        "direction": "Over-forecast",
+        "model_trust": "Moderate"
+      },
+      {
+        "day": 5,
+        "bust_probability": 0.78,
+        "forecast_rainfall_mm": 82,
+        "expected_error": 31,
+        "direction": "Under-forecast",
+        "model_trust": "Low"
+      },
+      {
+        "day": 6,
+        "bust_probability": 0.85,
+        "forecast_rainfall_mm": 107,
+        "expected_error": 47,
+        "direction": "Under-forecast",
+        "model_trust": "Low"
+      },
+      {
+        "day": 7,
+        "bust_probability": 0.65,
+        "forecast_rainfall_mm": 89,
+        "expected_error": 37,
+        "direction": "Under-forecast",
+        "model_trust": "Low"
+      },
+      {
+        "day": 8,
+        "bust_probability": 0.35,
+        "forecast_rainfall_mm": 61,
+        "expected_error": 22,
+        "direction": "Over-forecast",
+        "model_trust": "Moderate"
+      },
+      {
+        "day": 9,
+        "bust_probability": 0.18,
+        "forecast_rainfall_mm": 46,
+        "expected_error": 14,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      },
+      {
+        "day": 10,
+        "bust_probability": 0.1,
+        "forecast_rainfall_mm": 40,
+        "expected_error": 10,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      }
     ]
   },
   {
     "region": "Maharashtra",
     "days": [
-      { "day": 1, "bust_probability": 0.05 },
-      { "day": 2, "bust_probability": 0.08 },
-      { "day": 3, "bust_probability": 0.20 },
-      { "day": 4, "bust_probability": 0.35 },
-      { "day": 5, "bust_probability": 0.25 },
-      { "day": 6, "bust_probability": 0.15 },
-      { "day": 7, "bust_probability": 0.10 },
-      { "day": 8, "bust_probability": 0.05 },
-      { "day": 9, "bust_probability": 0.02 },
-      { "day": 10, "bust_probability": 0.01 }
+      {
+        "day": 1,
+        "bust_probability": 0.05,
+        "forecast_rainfall_mm": 17,
+        "expected_error": 7,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      },
+      {
+        "day": 2,
+        "bust_probability": 0.08,
+        "forecast_rainfall_mm": 22,
+        "expected_error": 9,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      },
+      {
+        "day": 3,
+        "bust_probability": 0.2,
+        "forecast_rainfall_mm": 36,
+        "expected_error": 15,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      },
+      {
+        "day": 4,
+        "bust_probability": 0.35,
+        "forecast_rainfall_mm": 53,
+        "expected_error": 22,
+        "direction": "Over-forecast",
+        "model_trust": "Moderate"
+      },
+      {
+        "day": 5,
+        "bust_probability": 0.25,
+        "forecast_rainfall_mm": 45,
+        "expected_error": 12,
+        "direction": "Over-forecast",
+        "model_trust": "Moderate"
+      },
+      {
+        "day": 6,
+        "bust_probability": 0.15,
+        "forecast_rainfall_mm": 37,
+        "expected_error": 12,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      },
+      {
+        "day": 7,
+        "bust_probability": 0.1,
+        "forecast_rainfall_mm": 34,
+        "expected_error": 10,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      },
+      {
+        "day": 8,
+        "bust_probability": 0.05,
+        "forecast_rainfall_mm": 31,
+        "expected_error": 7,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      },
+      {
+        "day": 9,
+        "bust_probability": 0.02,
+        "forecast_rainfall_mm": 30,
+        "expected_error": 6,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      },
+      {
+        "day": 10,
+        "bust_probability": 0.01,
+        "forecast_rainfall_mm": 31,
+        "expected_error": 5,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      }
     ]
   },
   {
     "region": "Kerala",
     "days": [
-      { "day": 1, "bust_probability": 0.20 },
-      { "day": 2, "bust_probability": 0.22 },
-      { "day": 3, "bust_probability": 0.25 },
-      { "day": 4, "bust_probability": 0.18 },
-      { "day": 5, "bust_probability": 0.15 },
-      { "day": 6, "bust_probability": 0.12 },
-      { "day": 7, "bust_probability": 0.10 },
-      { "day": 8, "bust_probability": 0.08 },
-      { "day": 9, "bust_probability": 0.05 },
-      { "day": 10, "bust_probability": 0.05 }
+      {
+        "day": 1,
+        "bust_probability": 0.2,
+        "forecast_rainfall_mm": 32,
+        "expected_error": 15,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      },
+      {
+        "day": 2,
+        "bust_probability": 0.22,
+        "forecast_rainfall_mm": 36,
+        "expected_error": 16,
+        "direction": "Over-forecast",
+        "model_trust": "Moderate"
+      },
+      {
+        "day": 3,
+        "bust_probability": 0.25,
+        "forecast_rainfall_mm": 41,
+        "expected_error": 17,
+        "direction": "Over-forecast",
+        "model_trust": "Moderate"
+      },
+      {
+        "day": 4,
+        "bust_probability": 0.18,
+        "forecast_rainfall_mm": 36,
+        "expected_error": 14,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      },
+      {
+        "day": 5,
+        "bust_probability": 0.15,
+        "forecast_rainfall_mm": 120,
+        "expected_error": 15,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      },
+      {
+        "day": 6,
+        "bust_probability": 0.12,
+        "forecast_rainfall_mm": 34,
+        "expected_error": 11,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      },
+      {
+        "day": 7,
+        "bust_probability": 0.1,
+        "forecast_rainfall_mm": 34,
+        "expected_error": 10,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      },
+      {
+        "day": 8,
+        "bust_probability": 0.08,
+        "forecast_rainfall_mm": 34,
+        "expected_error": 9,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      },
+      {
+        "day": 9,
+        "bust_probability": 0.05,
+        "forecast_rainfall_mm": 33,
+        "expected_error": 7,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      },
+      {
+        "day": 10,
+        "bust_probability": 0.05,
+        "forecast_rainfall_mm": 35,
+        "expected_error": 7,
+        "direction": "Over-forecast",
+        "model_trust": "High"
+      }
     ]
   }
 ]

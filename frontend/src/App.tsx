@@ -3,15 +3,13 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { AppLayout } from './components/layout/AppLayout';
 import { AppStateProvider } from './contexts/AppStateContext';
 import { Dashboard } from './pages/Dashboard';
-import { 
-  MapPage, 
-  MatrixPage, 
-  AnalysisPage, 
-  ReplayPage, 
-  PerformancePage, 
-  DataPage, 
-  SettingsPage 
-} from './pages/Placeholders';
+import { MapPage } from './pages/MapPage';
+import { MatrixPage } from './pages/MatrixPage';
+import { AnalysisPage } from './pages/AnalysisPage';
+import { ReplayPage } from './pages/ReplayPage';
+import { PerformancePage } from './pages/PerformancePage';
+import { DataPage } from './pages/DataPage';
+import { SettingsPage } from './pages/SettingsPage';
 
 const queryClient = new QueryClient({
   defaultOptions: {
