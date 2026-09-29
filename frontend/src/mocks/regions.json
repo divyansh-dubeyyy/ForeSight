@@ -1,0 +1,47 @@
+[
+  {
+    "region": "Madhya Pradesh",
+    "days": [
+      { "day": 1, "bust_probability": 0.1 },
+      { "day": 2, "bust_probability": 0.12 },
+      { "day": 3, "bust_probability": 0.15 },
+      { "day": 4, "bust_probability": 0.25 },
+      { "day": 5, "bust_probability": 0.78 },
+      { "day": 6, "bust_probability": 0.85 },
+      { "day": 7, "bust_probability": 0.65 },
+      { "day": 8, "bust_probability": 0.35 },
+      { "day": 9, "bust_probability": 0.18 },
+      { "day": 10, "bust_probability": 0.1 }
+    ]
+  },
+  {
+    "region": "Maharashtra",
+    "days": [
+      { "day": 1, "bust_probability": 0.05 },
+      { "day": 2, "bust_probability": 0.08 },
+      { "day": 3, "bust_probability": 0.20 },
+      { "day": 4, "bust_probability": 0.35 },
+      { "day": 5, "bust_probability": 0.25 },
+      { "day": 6, "bust_probability": 0.15 },
+      { "day": 7, "bust_probability": 0.10 },
+      { "day": 8, "bust_probability": 0.05 },
+      { "day": 9, "bust_probability": 0.02 },
+      { "day": 10, "bust_probability": 0.01 }
+    ]
+  },
+  {
+    "region": "Kerala",
+    "days": [
+      { "day": 1, "bust_probability": 0.20 },
+      { "day": 2, "bust_probability": 0.22 },
+      { "day": 3, "bust_probability": 0.25 },
+      { "day": 4, "bust_probability": 0.18 },
+      { "day": 5, "bust_probability": 0.15 },
+      { "day": 6, "bust_probability": 0.12 },
+      { "day": 7, "bust_probability": 0.10 },
+      { "day": 8, "bust_probability": 0.08 },
+      { "day": 9, "bust_probability": 0.05 },
+      { "day": 10, "bust_probability": 0.05 }
+    ]
+  }
+]

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, ReferenceArea } from 'recharts';
 import { Play, Pause, FastForward, SkipBack, CheckCircle, XCircle, Info, CloudRain, ShieldCheck, AlertTriangle } from 'lucide-react';
